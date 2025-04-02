@@ -58,8 +58,8 @@ export default function Monitoreo() {
                   <h3 className="font-semibold text-white">
                     Monitoreo Del Sistema En Tiempo Real
                   </h3>
-                  <p className="text-sm text-slate-400">DD</p>
-                  <ResponsiveContainer width="100%" height={300}>
+                  <p className="text-sm text-slate-400">Analizando...</p>
+                  <ResponsiveContainer width="101%" height={300}>
                     <LineChart data={data}>
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="time" />

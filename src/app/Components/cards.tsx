@@ -76,7 +76,7 @@ export const Cards = () => {
 
   return (
     <section className="p-6">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mt-3">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-3 mt-3">
         {caracteristicas.map((item, index) => (
           <div
             key={index}
