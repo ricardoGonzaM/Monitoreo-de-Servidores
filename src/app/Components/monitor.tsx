@@ -63,7 +63,7 @@ export default function Monitoreo() {
                   <ResponsiveContainer width="101%" height={300}>
                     <LineChart data={data}>
                       <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="time" />
+                      <XAxis stroke="#00d3f3" dataKey="time" />
                       <YAxis />
                       <Tooltip />
                       <Legend />
