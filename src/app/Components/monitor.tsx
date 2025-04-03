@@ -34,7 +34,8 @@ export default function Monitoreo() {
           time: new Date().toLocaleTimeString(),
           cpu: parseFloat(stats.cpu),
           memory: parseFloat(stats.memory),
-          network: parseFloat(stats.network),
+          network:
+            parseFloat(stats.network.upload) + parseFloat(stats.network.download), // Sumar subida y bajada
           disk: parseFloat(stats.disk),
         },
       ]);
@@ -99,18 +100,5 @@ export default function Monitoreo() {
         </div>
       </div>
     </section>
-    /*  <div>
-                <LineChart width={600} height={300} data={data}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="time" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Line type="monotone" dataKey="cpu" stroke="#ff7300" name="CPU (%)" />
-                    <Line type="monotone" dataKey="memory" stroke="#387908" name="Memoria (%)" />
-                    <Line type="monotone" dataKey="network" stroke="#0033cc" name="Red (KB/s)" />
-                    <Line type="monotone" dataKey="disk" stroke="#cc0000" name="Disco (%)" />
-                </LineChart>
-            </div>*/
   );
 }

@@ -12,13 +12,17 @@
     "@react-three/fiber": "^9.1.0",
     "@types/three": "^0.174.0",
     "clsx": "^2.1.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "lucide-react": "^0.483.0",
     "motion": "^12.6.2",
     "next": "^15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "recharts": "^2.15.1",
+    "socket.io": "^4.8.1",
     "socket.io-client": "^4.8.1",
+    "systeminformation": "^5.25.11",
     "tailwind-merge": "^3.0.2",
     "three": "^0.174.0"
   },
@@ -27,6 +31,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^9.1.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
